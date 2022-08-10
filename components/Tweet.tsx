@@ -26,6 +26,16 @@ const Tweet = ({ tweet }: Props) => {
     setComments(comments);
   };
 
+  const [liked, setLiked] = useState<boolean>(false);
+  const handleLiked = () => {
+    setLiked(!liked);
+  };
+
+  const [reTweet, setReTweet] = useState<boolean>(false);
+  const handleReTweet = () => {
+    setReTweet(!reTweet);
+  };
+
   useEffect(() => {
     refreshComments();
   }, []);
@@ -100,11 +110,23 @@ const Tweet = ({ tweet }: Props) => {
           <ChatAlt2Icon className="h-5 w-5" />
           <p>{comments.length}</p>
         </div>
-        <div className="flex cursor-pointer items-center space-x-3 text-gray-400 ">
-          <SwitchHorizontalIcon className="h-5 w-5" />
+        <div
+          onClick={handleReTweet}
+          className="flex cursor-pointer items-center space-x-3 text-gray-400 "
+        >
+          <SwitchHorizontalIcon
+            className={`h-5 w-5 ${reTweet ? "text-sky-500" : "bg-white"} `}
+          />
+          <p>{reTweet ? "1" : "0"}</p>
         </div>
-        <div className="flex cursor-pointer items-center space-x-3 text-gray-400 ">
-          <HeartIcon className="h-5 w-5" />
+        <div
+          onClick={handleLiked}
+          className="flex cursor-pointer items-center space-x-3 text-gray-400 "
+        >
+          <HeartIcon
+            className={`h-5 w-5 ${liked ? "text-pink-500" : "bg-white"}`}
+          />
+          <p>{liked ? "1" : "0"}</p>
         </div>
         <div className="flex cursor-pointer items-center space-x-3 text-gray-400 ">
           <UploadIcon className="h-5 w-5" />
