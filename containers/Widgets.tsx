@@ -1,10 +1,10 @@
 import { SearchIcon } from "@heroicons/react/outline";
 import React from "react";
-import { TwitterTimelineEmbed } from "react-twitter-embed";
+import Happening from "../components/Happening";
 
 const Widgets = () => {
   return (
-    <div className="mt-2 px-2 col-span-2 hidden lg:inline ">
+    <div className="mt-2 px-2 col-span-2  hidden lg:inline ">
       {/* Search Box */}
       <div className="mt-2 rounded-full flex items-center space-x-2 rouned-full bg-gray-100 p-3">
         <SearchIcon className="h-5 w-5 text-gray-400" />
@@ -15,11 +15,12 @@ const Widgets = () => {
         />
       </div>
 
-      <TwitterTimelineEmbed
+      {/* <TwitterTimelineEmbed
         sourceType="profile"
         screenName="JHALA_D_S"
         options={{ height: 1000 }}
-      />
+      /> */}
+      <Happening />
     </div>
   );
 };

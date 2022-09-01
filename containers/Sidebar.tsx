@@ -9,6 +9,7 @@ import {
   HomeIcon,
   BookmarkIcon,
 } from "@heroicons/react/outline";
+import Link from "next/link";
 import SidebarRow from "../components/SidebarRow";
 import { signIn, signOut, useSession } from "next-auth/react";
 
@@ -22,10 +23,6 @@ const Sidebar = () => {
         alt="Logo"
       />
       <SidebarRow Icon={HomeIcon} title="Home" />
-      <SidebarRow Icon={HashtagIcon} title="Explore" />
-      <SidebarRow Icon={BellIcon} title="Notifications" />
-      <SidebarRow Icon={MailIcon} title="Messages" />
-
       <SidebarRow
         onClick={session ? signOut : signIn}
         Icon={UserIcon}
