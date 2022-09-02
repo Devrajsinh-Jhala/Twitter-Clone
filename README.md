@@ -1,27 +1,56 @@
-# Next.js + Tailwind CSS Example
+# Twitter Clone:
+A platform where users can pen their thoughts, opinions and experiences for other people to view, comment and discuss upon.
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+# How to use the app:
+1. Clone this repository to your local machine
+2. Run the command `yarn install` for installing the necessary dependencies
+3. Run the command `yarn run dev` to start the app and it will be served at `http://localhost:3000`
 
-## Deploy your own
+# How to Tweet:
+- You first need to sign in yourself with either your google account or twitter account
+- After that you can just write anything and even attach Image URL by clicking on the 1<sup>st</sup> button.
+- After completion of composing content, just click on Tweet button and refresh your feed, it will appear after some time.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+# Features:
+1. Adding Comments:
+- You can add comments by clicking on the comments icon.
+- Not only one but you can add any number of comments to any number of Posts.
+- You can also create threads by doing multiple comments on the same post.
+<br>
+2. Authentication:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+- You can sign-in by either your Google account or your Twitter Account.
+- Once signed in, only then you can Tweet.
+<br>
+3. Blocking Tweet:
 
-## How to use
+- Admin also has the feature to block any tweet which is deemed in-appropriate.
+<br>
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+# Dependencies:
+1. [NextJS](https://nextjs.org/)
+2. [Next Sanity](https://www.npmjs.com/package/next-sanity)
+3. React Hot Toast
+4. Heroicons React
+5. Next Auth
+6. React TimeAgo
+7. React Twitter Embed
+8. Tailwind Scrollbar Hide
+9. TypeScript
+10. TailwindCSS
+11. Sanity Image URL
+<br>
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+# How the app looks at various stages:
+1. Before Sign In:
+<img width="962" alt="Twitter Sign Out" src="https://user-images.githubusercontent.com/84381242/188077926-7dfb2a05-6072-4fb0-bed5-64ebdf273eeb.PNG">
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+2. Sign In Screen:
+<img width="385" alt="Sign In Screen" src="https://user-images.githubusercontent.com/84381242/188078024-226cf6a9-812c-4ea2-9a03-83572fa93dd7.PNG">
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+3. After Sign In:
+<img width="965" alt="Twitter Sign in" src="https://user-images.githubusercontent.com/84381242/188078061-eb504694-9fc2-434c-8ea8-03e15f426253.PNG">
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+
+
