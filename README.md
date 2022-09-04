@@ -30,15 +30,15 @@ A platform where users can pen their thoughts, opinions and experiences for othe
 # Dependencies:
 1. [NextJS](https://nextjs.org/)
 2. [Next Sanity](https://www.npmjs.com/package/next-sanity)
-3. React Hot Toast
-4. Heroicons React
-5. Next Auth
-6. React TimeAgo
-7. React Twitter Embed
-8. Tailwind Scrollbar Hide
-9. TypeScript
-10. TailwindCSS
-11. Sanity Image URL
+3. [React Hot Toast](https://react-hot-toast.com/)
+4. [Heroicons React](https://heroicons.com/)
+5. [Next Auth](https://next-auth.js.org/)
+6. [React TimeAgo](https://www.npmjs.com/package/react-timeago)
+7. [React Twitter Embed](https://www.npmjs.com/package/react-twitter-embed)
+8. [Tailwind Scrollbar Hide](https://www.npmjs.com/package/tailwind-scrollbar-hide)
+9. [TypeScript](https://www.typescriptlang.org/)
+10. [TailwindCSS](https://tailwindcss.com/)
+11. [Sanity Image URL](https://www.npmjs.com/package/@sanity/image-url)
 <br>
 
 # How the app looks at various stages:
